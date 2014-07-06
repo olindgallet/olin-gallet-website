@@ -1,0 +1,25 @@
+Redirect 301 /httpster/ http://www.olingallet.com
+Redirect 301 /college-degree-computer-science-jobs/ http://www.olingallet.com
+Redirect 301 /wp-content/themes/bluewaterbluesky/downloads/olin-gallet-resume.pdf http://www.olingallet.com
+Redirect 301 /wp-content/themes/bluewaterbluesky/downloads/olin-gallet-resume.doc http://www.olingallet.com
+Redirect 301 /resume/ http://www.olingallet.com
+Redirect 301 /portfolio/ http://www.olingallet.com
+Redirect 301 /gallery/ http://www.olingallet.com
+Redirect 301 /contact/ http://www.olingallet.com
+Redirect 301 /about-me/ http://www.olingallet.com
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteCond %{REQUEST_URI} !/system/.* [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
+RewriteCond %{HTTP_REFERER} !^$  
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?olingallet.com [NC]  
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?olingallet.*$
+RewriteRule \.(jpg|jpeg|png|gif)$ http://www.olingallet.com/hotlink-warning.php [NC,R,L]  
+
+
+ErrorDocument 404 /404.php 
+Options -Indexes 
