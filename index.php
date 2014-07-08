@@ -77,12 +77,48 @@
 		</div>
 	
 	<div class="container_24">
-		<div class="grid_24">
-			<img src="images/map.png" />
+		<div id="social-background" class="grid_24">
+		
+			<div class="container_24">
+				<div class="prefix_1 grid_3">
+				My Resume:
+				</div>
+				
+				<div class="grid_1">
+					<a href="documents/olin-gallet-resume.doc"><img src="images/word-icon.png"></a>
+				</div>
+				
+				<div class="prefix_1 grid_1">
+					<a href="documents/olin-gallet-resume.pdf"><img src="images/pdf-icon.png"></a>
+				</div>
+				
+				<div class="prefix_9 grid_4">
+					My Social Media:
+				</div>
+				
+				<div class="grid_1">
+					<a href="http://www.twitter.com/olingallet"><img src="images/twitter-button.png" /></a>
+				</div>
+				
+				<div class="prefix_1 grid_1 suffix_1">
+					<a href="http://www.linkedin.com/pub/olin-gallet/41/a1b/896/"><img src="images/linkedin-button.png" /></a>
+				</div>
+			</div>
+			
 		</div>
-
-		<div class="prefix_6 grid_2 suffix_16">
-			<img src="images/menu-option.png" />
+		
+		<div id="menu-background" class="grid_24">
+		
+			<div class="container_24">
+				<div class="prefix_2 grid_4">
+					<a href="http://www.google.com"><img src="images/portfolio-option.png"/></a>
+				</div>
+				
+				<div class="grid_4 suffix_14">
+					<a href="http://www.google.com"><img src="images/blog-option.png"/></a>
+				</div>
+			</div>
+			
 		</div>
 		
 		<footer class="prefix_1 grid_22 suffix_1">

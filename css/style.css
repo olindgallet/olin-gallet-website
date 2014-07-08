@@ -113,6 +113,7 @@ header #page-title h2{
   background: -ms-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%);
   background: linear-gradient(to bottom,  #f6e6b4 0%,#ed9017 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 );
+  font-family: 'Cabin Condensed', sans-serif;
 }
 
 #contact-form form ul li{
@@ -193,22 +194,24 @@ footer{
   height: 30px;
 }
 
-#social-media-box{
-	background-color: #fbdb6e;
-}
-
-.horizontal-list li{
-	display: inline;
-	list-style-type: none;
-}
-
-.menu-picture{
-	border-top: 5px solid #000;
-	border-bottom: 5px solid #000;
-}
-
 .translucent {
 	zoom: 1;
 	filter: alpha(opacity=50);
 	opacity: 0.5;
+}
+
+#menu-background{
+	background-image: url("../images/map.png");
+	height: 250px;
+}
+
+#social-background{
+  background-color: #348b83;
+  color: #fff;
+  height: 50px;
+}
+
+#social-background img{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
