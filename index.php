@@ -111,11 +111,11 @@
 		
 			<div class="container_24">
 				<div class="prefix_2 grid_4">
-					<a href="http://www.google.com"><img src="images/portfolio-option.png"/></a>
+					<a href="http://www.olingallet.com/portfolio.php"><img src="images/portfolio-option.png"/></a>
 				</div>
 				
 				<div class="grid_4 suffix_14">
-					<a href="http://www.google.com"><img src="images/blog-option.png"/></a>
+					<a href="http://www.olingallet.com/weblog/index.php"><img src="images/blog-option.png"/></a>
 				</div>
 			</div>
 			

@@ -23,3 +23,14 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://www.olingallet.com/hotlink-warning.php 
 
 ErrorDocument 404 /404.php 
 Options -Indexes 
+
+# Use PHP 5.2
+AddHandler application/x-httpd-php52 .php
+
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /opt/php52/lib
+<Files php.ini>
+order allow,deny
+deny from all
+</Files>
+</IfModule> 
