@@ -51,7 +51,7 @@ $(window).on("load", function(){
 	}
 
 	if (hours > 5 && hours <= 8){
-		skyline = paper.image("images/skyline-header-morning.png", 2, 2, 950, 300);
+		skyline = paper.image("images/skyline-header-morning.png", 1, 0, 950, 300);
 		$('header').addClass('sky-morning');
 		$('header #page-title h2').css('color', DARK_HEADER);
 		$('body').css('background-color', LIGHT_BODY);
@@ -60,7 +60,7 @@ $(window).on("load", function(){
 		time_display.text.attr({fill: time_display.color});
 	}
 	else if (hours > 8 && hours <= 16){
-		skyline = paper.image("images/skyline-header-midday.png", 2, 2, 950, 300);
+		skyline = paper.image("images/skyline-header-midday.png", 1, 0, 950, 300);
 		$('header').addClass('sky-midday');
 		$('header #page-title h2').css('color', LIGHT_HEADER);
 		$('body').css('background-color', LIGHT_BODY);
@@ -69,7 +69,7 @@ $(window).on("load", function(){
 		time_display.text.attr({fill: time_display.color});
 	}
 	else if (hours > 16 && hours <= 19){
-		skyline = paper.image("images/skyline-header-sunset.png", 2, 2, 950, 300);
+		skyline = paper.image("images/skyline-header-sunset.png", 1, 0, 950, 300);
 		$('header').addClass('sky-sunset');
 		$('header #page-title h2').css('color', DARK_HEADER);
 		$('body').css('background-color', LIGHT_BODY);
@@ -78,7 +78,7 @@ $(window).on("load", function(){
 		time_display.text.attr({fill: time_display.color});
 	}
 	else if (hours > 19 || hours <= 5){
-		skyline = paper.image("images/skyline-header-night.png", 2, 2, 950, 300);
+		skyline = paper.image("images/skyline-header-night.png", 1, 0, 950, 300);
 		$('header').addClass('sky-night');
 		$('header #page-title h2').css('color', LIGHT_HEADER);
 		$('body').css('background-color', LIGHT_BODY);
@@ -136,49 +136,6 @@ $(window).on("load", function(){
 });
 
 $(document).ready(function(){
-	var contact_tab = '0px';
-	var info_tab = '0px';
-	
-	$('#contact-tab h2').click(function(){
-		if (contact_tab != '440px'){
-			contact_tab = '440px';
-			$('#contact-tab').animate({'left': contact_tab}, "medium", function(){
-				$('#contact-form').fadeIn('fast');
-			});
-		} else{
-			contact_tab = '0px';
-			$('#contact-form').fadeOut('fast', function(){
-				$('#contact-tab').animate({'left': contact_tab}, "medium");
-			});
-		}
-	});
-
-	$('#info-tab h2').click(function(){
-		if (info_tab != '440px'){
-			info_tab = '440px';
-			$('#info-tab').animate({'left': info_tab}, "medium", function(){
-				$('#info-form').fadeIn('fast');
-			});
-		} else{
-			info_tab = '0px';
-			$('#info-form').fadeOut('fast', function(){
-				$('#info-tab').animate({'left': info_tab}, "medium");
-			});
-		}
-	});	
-	
-	$('span#contact-link').click(function(){
-		element_to_scroll_to = document.getElementById('contact-tab');
-		element_to_scroll_to.scrollIntoView();
-		$('#contact-tab h2').trigger('click');
-	});
- 
-	$('span#info-link').click(function(){
-		element_to_scroll_to = document.getElementById('info-tab');
-		element_to_scroll_to.scrollIntoView();
-		$('#info-tab h2').trigger('click');
-	});
- 
 	var NUMBER_OF_CLOUDS = 15;
 	  
 	var header_clouds = new Array();

@@ -1,3 +1,8 @@
+<?php
+	require_once('session-util.php');
+	session_start();
+	set_site_token();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -40,38 +45,6 @@
 						<li><img id="sunset-button" src="images/sunset-button-dark.png" /></li>
 						<li><img id="night-button" src="images/night-button-dark.png" /></li>
 					</ul>
-				</div>
-		
-		
-				<div id="contact-form">
-					<form action="mail.php" method="post">
-						<ul>
-							<li>
-								<label for="email">Email:<sup>*</sup></label>
-								<input id="email" type="text" name="email" placeholder="What's your email?" required/>
-							</li>
-							<li>
-								<label for="message">Message:</label>
-								<textarea id="message" name="message" placeholder="What can I do for you?"></textarea>
-								<input type="submit" value="Send" type="submit">
-							</li>
-						</ul>
-					</form>
-				</div>
-				<div id="contact-tab">
-					<h2>Contact</h2>		
-				</div>
-		  
-			<div id="info-form">
-				<table>
-					<tr><td>Name: Olin Gallet</td></tr>
-					<tr><td>Phone: 830 776 4667</td></tr>
-					<tr><td>Email: olindgalletATolingallet.com</td></tr>
-					<tr><td>Location: New Orleans, LA</td></tr>
-				</table>
-			</div>
-			<div id="info-tab">
-				<h2>Info</h2>
 				</div>
 			</header>
 		</div>
@@ -121,8 +94,51 @@
 			
 		</div>
 		
+		<div id="about-background" class="grid_24">
+		
+			<div class="container_24">
+				<div class="prefix_1 grid_9 suffix_4">
+					<h2>About Me:</h2>
+					
+					<p>I am a computer scientist currently residing in New Orleans, LA.  I have an interest in the entire breadth of the field
+					with a current passion for the application of technology to human psychology and vice-versa.  My language of choice is PHP.</p>
+					
+					<h2>How I Can Help You:</h2>
+					
+					<ul>
+						<li>Make/modify a website</li>
+						<li>Make/modify backend (databases, logic, etc.)</li>
+						<li>Most importantly, solve problems</li>
+					</ul>
+					<p>When in doubt, contact me through the form to the right.</p>
+				</div>
+				
+				<div class="grid_9 suffix_1">
+					<h2>Contact Me:</h2>
+					
+					<form action="mail.php" method="POST" id="contact-form">
+						<ul>
+							<li><label for="contact-email">Email*:</label><input size="40" id="contact-email" type="email" name="email" placeholder="Your email is required." required/></li>
+							<li><label for="contact-message">Message:</label><textarea cols="40" rows="4" id="contact-message" type="text" name="message" placeholder="A message is helpful but not required."></textarea></li>
+							<li><input type="submit" id="submit-contact-form" class="submit" value="Submit" /> </li>
+						</ul>
+						<div id="contact-form-status" class="error-message"></div>
+					</form>
+					
+					<p class="vcard">
+						<a class="fn url" href="http://www.olingallet.com" title="Contact Information for Olin Gallet">Olin Gallet</a><br/>
+						<span class="tel">Telephone: <span class="value">830-776-4667</span></span><br/>
+						<span class="adr">
+							<span class="locality">New Orleans</span> <span class="region">LA</span> <span class="postal-code">70112</span> <span class="country-name">USA</span><br/>
+						</span>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		
 		<footer class="prefix_1 grid_22 suffix_1">
-			Olin Gallet &copy;2013, 2014 | New Orleans, LA | 830 776 4667
+			Olin Gallet &copy;<?php echo date("Y") ?> | New Orleans, LA | 830 776 4667
 		</footer>
 	</div>
 
@@ -132,6 +148,7 @@
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.1.0/moment-timezone.min.js"></script>
 	<script type="text/javascript" src="scripts/skyline.js"></script>
+	<script type="text/javascript" src="scripts/mail-form-validation.js"></script>
   </body>
   
 </html>

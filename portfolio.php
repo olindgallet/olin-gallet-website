@@ -18,6 +18,7 @@
 			<section>
 				<h2>Hi I'm Olin Gallet</h2>
 				<h2>This is my portfolio</h2>
+				<a href="http://www.olingallet.com">This is my homepage</a>
 				<p>PC Users: Use your arrow keys or the navigator in the lower-right corner</p>
 				<p>Mobile Users: Slide to navigate</p>
 			</section>
