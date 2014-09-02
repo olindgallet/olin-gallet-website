@@ -84,11 +84,15 @@
 		
 			<div class="container_24">
 				<div class="prefix_2 grid_4">
-					<a href="http://www.olingallet.com/portfolio.php"><img src="images/portfolio-option.png"/></a>
+					<a href="http://www.olingallet.com/portfolio"><img src="images/portfolio-option.png"/></a>
 				</div>
 				
-				<div class="grid_4 suffix_14">
-					<a href="http://www.olingallet.com/weblog/index.php"><img src="images/blog-option.png"/></a>
+				<div class="grid_4">
+					<a href="http://www.olingallet.com/weblog"><img src="images/blog-option.png"/></a>
+				</div>
+				
+				<div class="grid_4 suffix_10">
+					<a href="http://www.olingallet.com/copywritingblog"><img src="images/copywriting-option.png"/></a>
 				</div>
 			</div>
 			
@@ -98,10 +102,9 @@
 		
 			<div class="container_24">
 				<div class="prefix_1 grid_9 suffix_4">
-					<h2>About Me:</h2>
+					<h2>This is Me:</h2>
 					
-					<p>I am a computer scientist currently residing in New Orleans, LA.  I have an interest in the entire breadth of the field
-					with a current passion for the application of technology to human psychology and vice-versa.  My language of choice is PHP.</p>
+					<p>I am a computer scientist living currently in New Orleans, LA.  I design solutions for problems in the world of computer science, document my journey in blogs, and have fun doing it.  </p>
 					
 					<h2>How I Can Help You:</h2>
 					
@@ -110,11 +113,11 @@
 						<li>Make/modify backend (databases, logic, etc.)</li>
 						<li>Most importantly, solve problems</li>
 					</ul>
-					<p>When in doubt, contact me through the form to the right.</p>
+					<p>Got a question or a business inquiry? Contact me through the form to the right.</p>
 				</div>
 				
 				<div class="grid_9 suffix_1">
-					<h2>Contact Me:</h2>
+					<h2>Contact:</h2>
 					
 					<form action="mail.php" method="POST" id="contact-form">
 						<ul>
