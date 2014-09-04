@@ -58,11 +58,11 @@
 				</div>
 				
 				<div class="grid_1">
-					<a href="documents/olin-gallet-resume.doc"><img src="images/word-icon.png"></a>
+					<a href="http://bit.ly/olin-gallet-resume"><img src="images/word-icon.png"></a>
 				</div>
 				
 				<div class="prefix_1 grid_1">
-					<a href="documents/olin-gallet-resume.pdf"><img src="images/pdf-icon.png"></a>
+					<a href="http://bit.ly/olin-gallet-resume-pdf"><img src="images/pdf-icon.png"></a>
 				</div>
 				
 				<div class="prefix_9 grid_4">
@@ -70,11 +70,11 @@
 				</div>
 				
 				<div class="grid_1">
-					<a href="http://www.twitter.com/olingallet"><img src="images/twitter-button.png" /></a>
+					<a href="http://bit.ly/olin-gallet-twitter"><img src="images/twitter-button.png" /></a>
 				</div>
 				
 				<div class="prefix_1 grid_1 suffix_1">
-					<a href="http://www.linkedin.com/pub/olin-gallet/41/a1b/896/"><img src="images/linkedin-button.png" /></a>
+					<a href="http://bit.ly/olin-gallet-linkedin"><img src="images/linkedin-button.png" /></a>
 				</div>
 			</div>
 			
@@ -84,15 +84,15 @@
 		
 			<div class="container_24">
 				<div class="prefix_2 grid_4">
-					<a href="http://www.olingallet.com/portfolio"><img src="images/portfolio-option.png"/></a>
+					<a href="http://bit.ly/olin-gallet-portfolio"><img src="images/portfolio-option.png"/></a>
 				</div>
 				
 				<div class="grid_4">
-					<a href="http://www.olingallet.com/weblog"><img src="images/blog-option.png"/></a>
+					<a href="http://bit.ly/olin-gallet-weblog"><img src="images/blog-option.png"/></a>
 				</div>
 				
 				<div class="grid_4 suffix_10">
-					<a href="http://www.olingallet.com/copywritingblog"><img src="images/copywriting-option.png"/></a>
+					<a href="http://bit.ly/olin-gallet-copywriting-blog"><img src="images/copywriting-option.png"/></a>
 				</div>
 			</div>
 			
